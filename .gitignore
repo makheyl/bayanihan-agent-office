@@ -1,0 +1,12 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+# Made by the build from ../Game/Docs/Maps (scripts/build-map.mjs).
+public/mabuhay-map.json
+# Written by scripts/serve.mjs while the server runs.
+server.log
+.server.pid
+.serve.lock/
+.no-autostart
+.DS_Store

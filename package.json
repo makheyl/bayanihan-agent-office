@@ -1,0 +1,31 @@
+{
+  "name": "bayanihan-hq",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bayanihan HQ: a localhost page that shows, live, what each Claude Code agent is doing in a 3D barangay DRRM office.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs --foreground",
+    "stop": "node scripts/serve.mjs --stop",
+    "dev": "NEXT_TELEMETRY_DISABLED=1 next dev -H 127.0.0.1 -p 47821",
+    "build": "node scripts/build-map.mjs && NEXT_TELEMETRY_DISABLED=1 next build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.187.0",
+    "typescript": "^5",
+    "vitest": "5.1.2"
+  }
+}
